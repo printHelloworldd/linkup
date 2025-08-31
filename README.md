@@ -1,4 +1,4 @@
-![[images/heading.png]]
+![Heading](images/heading.png)
 
 **LinkUp** is a social network web app that connects people with common hobbies and interests. Users choose their hobbies from a list of more than **400 hobbies**, get recommendations, and find like-minded people.
 
@@ -75,10 +75,11 @@ LinkUp uses modern cryptographic standards:
 
 ## 🖼️ Screenshots
 
-![Hobbies screen](images/hobbies_page.png)
-![Profile screen](images/profile_page.png)
-![Chat screen](images/chat_page.png)
-![Chats screen](images/chats_page.png)
+<img src="images/hobbies_page.png" alt="screenshot" width="300" height="600"/>
+<img src="images/profile_page.png" alt="screenshot" width="300" height="600"/>
+<img src="images/profile_page.png" alt="screenshot" width="300" height="600"/>
+<img src="images/chats_page.png" alt="screenshot" width="300" height="600"/>
+<img src="images/chat_page.png" alt="screenshot" width="300" height="600"/>
 
 ---
 
