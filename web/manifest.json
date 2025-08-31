@@ -1,0 +1,41 @@
+{
+    "name": "LinkUp",
+    "short_name": "LinkUp",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#1b1b1b",
+    "theme_color": "#1b1b1b",
+    "description": "LinkUp is a social network that connects people based on common interests.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "display_override": [
+        "standalone",
+        "minimal-ui"
+    ],
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

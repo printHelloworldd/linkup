@@ -1,0 +1,1 @@
+window.flutterfire_ignore_scripts = ['analytics', 'firestore'];

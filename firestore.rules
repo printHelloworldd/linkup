@@ -1,0 +1,68 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+  
+  function isSignedIn() {
+    return request.auth != null;
+  }
+
+  function isUser(userId) {
+    return request.auth.uid == userId;
+  }
+      
+  // Может быть, стоит сохранять id участников чата, чтобы проверять
+  // каждого пользователя
+  function isParticipant(chatId) {
+    let users = chatId.split("_");
+        
+    return request.auth != null && (request.auth.uid == users[0] || request.auth.uid == users[1]);
+  }
+  
+  function areUsersConnected(userId) {
+  	let currentUserId = request.auth.uid;
+    
+  	let chatId1 = userId + '_' + currentUserId;
+  	let chatId2 = currentUserId + '_' + userId;
+  
+  	return exists(/databases/$(database)/documents/CHAT_ROOMS/$(chatId1))
+      || exists(/databases/$(database)/documents/CHAT_ROOMS/$(chatId2));
+	}
+  
+  function isOnlyChatroomsUpdated() {
+  	return request.resource.data.diff(resource.data).affectedKeys()
+        .hasOnly(['chatrooms']);
+	}
+    
+    match /Users/{userId} {
+  		// Разрешаем чтение только для авторизованных пользователей
+  		allow read: if isSignedIn();
+
+  		// Правила для создания, удаления и обновления:
+  		allow create, delete, write: if isSignedIn() && isUser(userId); // Может создавать и удалить только сам пользователь
+  		allow update: if isSignedIn() && (isUser(userId) || isOnlyChatroomsUpdated()); // Обновление данных:
+    	// 1) Если это сам пользователь — он может обновить все
+    	// 2) Если это другой пользователь, то только поле chatrooms
+      //! ЛЮБОЙ ПОЛЬЗОВАТЕЛЬ МОЖЕТ ИЗМЕНИТЬ chatrooms
+		}
+    
+    match /Users/{userId}/Restricted/data {
+  		allow read: if isSignedIn() && (isUser(userId) || areUsersConnected(userId));
+
+  		allow create, delete, write, update: if isSignedIn() && isUser(userId);
+		}
+    
+    match /Users/{userId}/Private/data {
+  		allow read, create, delete, write, update: if isSignedIn() && isUser(userId);
+		}
+    
+    match /CHAT_ROOMS/{chatId} {
+      allow read, write, update, delete: if isSignedIn() && isParticipant(chatId);
+      allow create: if isSignedIn();
+      
+      match /MESSAGES/{messageId} {
+        allow read, write, update, delete, create: if isSignedIn() && isParticipant(chatId);
+      }
+    }
+  }
+}

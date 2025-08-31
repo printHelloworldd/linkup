@@ -1,0 +1,193 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "social-network-90106",
+          "appId": "1:496738673476:android:69d44496ade18f493fed11",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "social-network-90106",
+          "configurations": {
+            "android": "1:496738673476:android:69d44496ade18f493fed11",
+            "ios": "1:496738673476:ios:dc083899b479af513fed11",
+            "web": "1:496738673476:web:2096ee374b5424b83fed11"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5555,
+      "host": "0.0.0.0",
+      "public": "web",
+      "errorPages": {
+        "404": "/404.html"
+      },
+      "rewrites": [
+        {
+          "source": "/**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "/**",
+          "headers": [
+            {
+              "key": "X-Frame-Options",
+              "value": "DENY"
+            },
+            {
+              "key": "Content-Security-Policy",
+              "value": "default-src 'self' https://s-usc1a-nss-2016.firebaseio.com https://www.google.com https://fonts.gstatic.com; script-src 'self' https://accounts.google.com https://www.gstatic.com 'wasm-unsafe-eval'; script-src-elem 'self' https://unpkg.com https://s-usc1a-nss-2016.firebaseio.com https://social-network-90106-default-rtdb.firebaseio.com https://www.google.com/recaptcha/api.js https://accounts.google.com https://www.gstatic.com 'wasm-unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; connect-src 'self' https://fcmregistrations.googleapis.com https://firebaseinstallations.googleapis.com wss://s-usc1a-nss-2016.firebaseio.com https://s-usc1a-nss-2016.firebaseio.com https://content-firebaseappcheck.googleapis.com https://www.google.com https://api.wiredash.io https://cdn-icons-png.flaticon.com https://accounts.google.com https://wpvcdltgljcvclyeuhmv.supabase.co wss://wpvcdltgljcvclyeuhmv.supabase.co https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://social-network-90106.firebaseio.com https://firestore.googleapis.com https://fcm.googleapis.com https://fonts.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://wpvcdltgljcvclyeuhmv.supabase.co; frame-ancestors 'self' https://www.google.com; object-src 'none';"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains; preload"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
+            },
+            {
+              "key": "Permissions-Policy",
+              "value": "camera=(self), clipboard-read=(self), clipboard-write=(self), geolocation=(), microphone=(), usb=(), payment=()"
+            }
+          ]
+        }
+      ]
+    },
+    "auth": {
+      "port": 7077
+    },
+    "firestore": {
+      "port": 8080,
+      "rules": "firestore.rules"
+    },
+    "database": {
+      "port": 7000
+    },
+    "ui": {
+      "enabled": true,
+      "port": 7557
+    },
+    "singleProjectMode": true
+  },
+  "hosting": {
+    "public": "build/web",
+    "rewrites": [
+      {
+        "source": "/**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "X-Frame-Options",
+            "value": "DENY"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self' https://social-network-90106.firebaseapp.com https://s-usc1a-nss-2016.firebaseio.com https://www.google.com https://fonts.gstatic.com; script-src 'self' https://accounts.google.com https://www.gstatic.com 'wasm-unsafe-eval'; script-src-elem 'self' https://apis.google.com https://unpkg.com https://s-usc1a-nss-2016.firebaseio.com https://social-network-90106-default-rtdb.firebaseio.com https://www.google.com/recaptcha/api.js https://accounts.google.com https://www.gstatic.com 'wasm-unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; connect-src 'self' blob: https://fcmregistrations.googleapis.com https://firebaseinstallations.googleapis.com wss://s-usc1a-nss-2016.firebaseio.com https://s-usc1a-nss-2016.firebaseio.com https://content-firebaseappcheck.googleapis.com https://www.google.com https://api.wiredash.io https://cdn-icons-png.flaticon.com https://accounts.google.com https://wpvcdltgljcvclyeuhmv.supabase.co wss://wpvcdltgljcvclyeuhmv.supabase.co https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://social-network-90106.firebaseio.com https://firestore.googleapis.com https://fcm.googleapis.com https://fonts.gstatic.com https://www.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://cdn-icons-png.flaticon.com https://wpvcdltgljcvclyeuhmv.supabase.co; frame-ancestors 'self' https://www.google.com; object-src 'none'; frame-src 'self' https://social-network-90106.firebaseapp.com https://*.firebaseapp.com https://accounts.google.com https://*.gstatic.com https://www.gstatic.com https://www.google.com https://s-usc1a-nss-2016.firebaseio.com;"
+          },
+          {
+            "key": "Strict-Transport-Security",
+            "value": "max-age=31536000; includeSubDomains; preload"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(self), clipboard-read=(self), clipboard-write=(self), geolocation=(), microphone=(), usb=(), payment=()"
+          }
+        ]
+      },
+      {
+        "source": "/main.dart.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/flutter_bootstrap.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/version.json",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/**/*.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(mjs|js|wasm|json)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|css|eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=3600,s-maxage=604800"
+          }
+        ]
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

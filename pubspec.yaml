@@ -1,0 +1,204 @@
+name: linkup
+description: "LinkUp is a social network that connects people based on common interests."
+publish_to: "none"
+version: 1.0.0-beta.1+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  # 🔧 Core Flutter
+  flutter:
+    sdk: flutter
+
+  # 🔐 Firebase & Auth
+  firebase_core: ^4.0.0
+  firebase_database: ^12.0.0
+  cloud_firestore: ^6.0.0
+  firebase_auth: ^6.0.1
+  google_sign_in: ^7.1.1
+  google_sign_in_web: ^1.0.0
+  firebase_messaging: ^16.0.0
+  googleapis_auth: ^2.0.0
+  extension_google_sign_in_as_googleapis_auth: ^3.0.0
+  firebase_remote_config: ^6.0.0
+  firebase_app_check: ^0.4.0
+
+  # 🧩 External services & APIs
+  supabase_flutter: ^2.8.4
+
+  # 📦 State Management
+  flutter_bloc: ^9.1.1
+  get_it: ^8.0.3
+  flutter_hooks: ^0.21.3+1
+  provider: ^6.1.2
+  retrofit: ^4.4.2
+  logger: ^2.4.0 # for logging purpose
+
+  # 🌐 Networking
+  dio: ^5.8.0+1
+  http: ^1.3.0
+  html: ^0.15.5
+  url_launcher: ^6.3.1
+  cached_network_image: ^3.4.1
+  get: ^4.7.2
+  connectivity_plus: ^6.1.4
+
+  # 🎧 Audio & Multimedia
+  image_picker: ^1.1.2
+  image_picker_for_web: ^3.0.6
+  image: ^4.3.0
+  audioplayers: ^6.2.0
+
+  # 🔗 Sharing & Clipboard
+  share_plus: ^11.1.0
+  clipboard: ^2.0.2
+
+  # 🌍 Localization & Internationalization
+  easy_localization: ^3.0.7+1
+
+  # 📱 Permissions
+  permission_handler: any
+
+  # ⚡ Utilities
+  equatable: ^2.0.7
+  rxdart: ^0.28.0
+  csv: ^6.0.0
+  basic_utils: ^5.7.0
+  archive: ^3.6.1
+  dhttpd: ^4.1.0
+  convert: ^3.1.2
+  flutter_node_worker: ^0.0.4
+  collection: ^1.18.0
+  upgrader: ^11.5.0
+  package_info_plus: ^8.3.1
+
+  # 🔒 QR Code & Scanning
+  pretty_qr_code: ^3.3.0
+  mobile_scanner: ^7.0.1
+
+  # 📚 Markdown
+  flutter_markdown: ^0.7.6+2
+
+  # 🚨 Debugging & Error Tracking
+  wiredash: ^2.4.0
+  dartz: ^0.10.1
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.4
+  fake_cloud_firestore: ^4.0.0
+  firebase_auth_mocks: ^0.15.0
+
+  # 🛠️ Data Storage
+  flutter_secure_storage: ^9.2.4
+  floor: ^1.5.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # 🧭 Date & Time
+  intl: ^0.20.2
+
+  # 🔒 Security & Encryption 
+  # pointycastle: ^4.0.0
+  encrypt: ^5.0.3
+  crypto: ^3.0.6
+  hex: ^0.2.0
+  flutter_dotenv: ^6.0.0
+  bip39_mnemonic: ^4.0.1
+  bip39: ^1.0.6 
+  cryptography_plus: ^2.7.1 
+  ed25519_edwards: ^0.3.1
+
+  # 🔄 Data Parsing & Serialization
+  json_annotation: ^4.9.0
+
+  # 🎨 UI & Animations
+  popover: ^0.3.1
+  adaptive_dialog: ^2.4.2
+  fluttertoast: ^8.2.10
+  smooth_page_indicator: ^1.2.0+3
+  flutter_slidable: ^4.0.1
+  google_nav_bar: ^5.0.7
+  dynamic_tabbar: ^1.0.9
+  keyboard_avoider: ^0.2.0
+  swipe_to: ^1.0.6
+  sliding_up_panel: ^2.0.0+1
+  flutter_animate: ^4.5.2
+  lottie: any
+  pinput: ^5.0.1
+
+  # --- Fonts ---
+  font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
+
+  # --- Icons ---
+  typicons_flutter: ^0.5.0
+  iconify_flutter: ^0.0.7
+  colorful_iconify_flutter: ^0.0.5
+  ming_cute_icons: ^0.0.7
+  cupertino_icons: ^1.0.8
+  
+dependency_overrides:
+  path: ^1.9.1
+  meta: ^1.12.0
+  clock: ^1.1.2
+  archive: ^4.0.2
+  js: ^0.7.1
+  pointycastle: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  integration_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  
+  flutter_launcher_icons: ^0.14.3
+
+  build_runner: ^2.3.3
+
+  floor_generator: ^1.4.2
+
+  retrofit_generator: ">=8.0.0 <10.0.0" # for Dart 3.3 use ^9.0.0
+
+  json_serializable: ^6.8.0
+
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # - assets/dotenv
+    # - .env
+    # - assets/service_account_credentials.json
+    - assets/privacy_policy.md
+    - assets/terms_and_conditions.md
+    - assets/mnemonic_alert.md
+
+    - assets/sounds/Transformer/
+
+    - assets/icons/app-icon/
+
+    - assets/icons/
+    - assets/logo-icons/
+    - assets/icons/logos/
+
+    - assets/animations/
+
+    - assets/hobby_dataset/hobbies_with_icons.csv
+
+    - assets/localization/en.json
+    - assets/localization/ru.json
+    - assets/localization/uk.json
+
+    # - assets/hobby_dataset/
+    # - assets/hobby icon links/Outdoors and sports/
+    # - assets/hobby icon links/Outdoor Observation hobby/
+    # - assets/hobby icon links/Outdoor Competitive hobby/
+    # - assets/hobby icon links/Outdoor Collection hobby/
+    # - assets/hobby icon links/Indoor Observation hobby/
+    # - assets/hobby icon links/Indoor Competitive hobby/
+    # - assets/hobby icon links/Indoor Collection hobby/
+    # - assets/hobby icon links/Educational hobby/

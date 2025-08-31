@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "supabase": "^2.22.6"
+  },
+  "name": "social_network",
+  "version": "1.0.0",
+  "description": "A new Flutter project.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "partytown": "partytown copylib web/public/~partytown"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^7.0.2"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "bio_page": {
+    "name": "First name (Required)",
+    "title": "Let’s get to know you!",
+    "surname": "Second name (Required)",
+    "sign_in": "Sign In",
+    "already_member": "Already member?",
+    "age": "Age (optional):",
+    "gender": {
+      "gender": "Gender (optional):",
+      "male": "Male",
+      "female": "Female",
+      "transformer": "Transformer",
+      "prefer_not_to_say": "I prefer not to say"
+    },
+    "age_hint": "Write your age"
+  },
+  "hobby_page": {
+    "title": "What are you into?",
+    "subtitle": "You can choose more than one, but at least 1"
+  },
+  "core": {
+    "smth_went_wrong": "Something went wrong :(",
+    "email": "Email",
+    "cancel": "Cancel",
+    "psw": "Password",
+    "allow": "Allow",
+    "finish": "Finish",
+    "continue": "Continue",
+    "done": "Done",
+    "discard": "Discard",
+    "save": "Save",
+    "next": "Next",
+    "delete": "Delete",
+    "apply": "Apply"
+  },
+  "location_page": {
+    "title": "Where do you call home?"
+  },
+  "profile_picture_page": {
+    "title": "It’s your time to shine!",
+    "how_to": "Press the icon above to add a picture (optional)",
+    "bio": "Write a brief description about yourself... (optional)"
+  },
+  "search_hobby_page": {
+    "hint": "Search for hobbies"
+  },
+  "main_page": {
+    "warning": "⚠️ You should provide required data"
+  },
+  "reset_psw_page": {
+    "sent": "Password reset link sent! Check your email",
+    "reset": "Reset password",
+    "how_to": "Enter the email address with your account and we'll send an email with confirmation to reset your password."
+  },
+  "verification_page": {
+    "check": "Check Your Inbox",
+    "click": "Click the link sent to {email} to verify your email",
+    "not_sent": "Email not sent?",
+    "try_again": "Try Again"
+  },
+  "auth_page": {
+    "or": "Or continue with",
+    "forgot_psw": "Forgot password",
+    "sign_in": "Sign In",
+    "login_title": "Hello Again!",
+    "login_subtitle": "First time here?",
+    "sign_up": "Sign Up",
+    "wrong_data": "Wrong password or email",
+    "invalid_email": "Invalid email",
+    "reg_title": "Welcome!",
+    "reg_subtitle": "Already member?",
+    "psw_too_weak": "Password is too weak",
+    "too_weak": "Too weak",
+    "good": "Good",
+    "normal": "Normal",
+    "great": "Great",
+    "psw_strength": "Password strength: {passwordStrength}"
+  },
+  "city_widget": {
+    "select_city": "Select city (optional)",
+    "search": "Search for city",
+    "no_cities": "There are no cities available in your country yet."
+  },
+  "country_widget": {
+    "select": "Select country (optional)",
+    "search": "Search for country"
+  },
+  "nav_bar": {
+    "chats": "Chats",
+    "explore": "Explore",
+    "recommendation": "Recommendation",
+    "profile": "Profile"
+  },
+  "main_menu": {
+    "allow": "Allow notifications",
+    "notify": "We want to notify you of new messages in the chat rooms. Turn on notifications to stay up to date with new messages from your friends and chat members!",
+    "disabled": "Notifications are \ndisabled",
+    "disabled_info": "You have blocked notifications for this application. To avoid missing important messages and updates from other users in the chats, please enable notifications in your browser settings.",
+    "key_transfer": "Key transfer",
+    "transfer_info": "There is no private key on this device. \nYou can scan the QR code from another device, \nwhere there's already a key. \n\n1) Open the settings on the other device.\n2) Select \"Generate QR Code for Private Key\".\n3) Scan the code 4 times on this device.",
+    "scan": "Scan"
+  },
+  "scanner_page": {
+    "progress": "Key transfer progress",
+    "enter_psw": "Enter the password you set before generating the QR code.",
+    "enter_ur_psw": "Enter your password",
+    "imported": "The private key was successfully imported!",
+    "scan": "Scan QR Code"
+  },
+  "profile_page": {
+    "shared": "✅ The profile has been successfully sent!",
+    "canceled": "❌ You have cancelled the profile sharing.",
+    "failed": "⚠️ Failed to share profile. Please try again or contact support if the problem persists.",
+    "interests": "Interests: ",
+    "bio": "Bio: ",
+    "age": "Age: ",
+    "location": "Location: ",
+    "add": "Add social media links in your settings so friends can find you!"
+  },
+  "settings_page": {
+    "no_updates": "No new updates",
+    "already": "You are already on the latest version! We continue to work on improvements and will bring new features soon.",
+    "title": "Settings",
+    "edit_profile": "Edit profile",
+    "blocked_users": "Blocked users",
+    "check": "Check for update",
+    "log_out": "Log out"
+  },
+  "blocked_users_page": {
+    "unblock": "Unblock",
+    "title": "Blocked users",
+    "unblock_user": "Unblock user",
+    "alert_content": "Do you want to unblock ",
+    "on": " on LinkUp?",
+    "alert_content2": "Unblock {fullName}"
+  },
+  "edit_profile_page": {
+    "warning": "⚠️ You should provide required data",
+    "alert_title": "Exit without saving.",
+    "alert_content": "Do you want to save your changes before exiting?",
+    "bio": "Bio",
+    "social_medias": "Social medias",
+    "press": "Press the icon above to add or edit a picture"
+  },
+  "add_medias_widget": {
+    "title": "Add links to your social networks for easy communication with other users.",
+    "yt": "Share your YouTube channel! 📺",
+    "tiktok": "Share your TikTok! 🎵",
+    "tg": "Let’s chat on Telegram! 💬",
+    "linkedin": "Enter your LinkedIn profile link",
+    "facebook": "Share your Facebook! 📘",
+    "instagram": "Share your Instagram! 📸"
+  },
+  "qr_code_widget": {
+    "btn_text": "Generate QR Code for Private Key",
+    "title": "⚠️ IMPORTANT: This QR Code is your Private Key. Do not show it to anyone!",
+    "generate": "Generate QR Code",
+    "no_key": "There is no Private Key on this device",
+    "content": {
+      "1": " - The password should be complex but memorable.\n",
+      "2": " - It is not stored on our servers and we cannot recover it.\n",
+      "3": " - Without this password, you will not be able to decrypt your private key.\n",
+      "title": "Create a password to encrypt your private key \n",
+      "subtitle": "To protect your private key, create a strong password. You will need it when you restore access on another device.\n",
+      "important": "Important:\n",
+      "1_1": " - The password is one-time use"
+    }
+  },
+  "chat_page": {
+    "text_copied": "Text copied to clipboard.",
+    "delete_msgs_title": "Delete {count} messages",
+    "delete_msgs_content": "Are you sure you want to delete these messages?",
+    "delete_msg_title": "Delete message",
+    "delete_msg_content": "Are you sure you want to delete this message?",
+    "no_msg": "No messages",
+    "typing": "Typing...",
+    "online": "Online",
+    "offline": "Offline",
+    "reply": "Reply to {who}",
+    "input_hint": "Type your message...",
+    "restricted": "This user seems to have restricted access. \nYou cannot contact him/her."
+  },
+  "chats_list_page": {
+    "last_msg": "You: {msg}",
+    "deletion_title": "Delete chat",
+    "deletion_content": "Permanently delete the chat with ",
+    "delete_chat": "Delete chat",
+    "blocking_title": "Block {fullName}",
+    "blocking_content": "Do you want to block ",
+    "delete_": "Delete this chat",
+    "block_": "Block user",
+    "chats": "Chats",
+    "block": "Block",
+    "no_chats": "There are no active chat rooms. Find someone to chat with and start chatting."
+  },
+  "search_user_page": {
+    "search_hint": "User ID or name",
+    "try": "Try changing the query or check the correct spelling",
+    "no_one": "No one was found..."
+  },
+  "filter_widget": {
+    "hobby": "Hobby: ",
+    "category": "Hobby category: ",
+    "worldwide": "Worldwide"
+  },
+  "rec_page": {
+    "no_one_found": "No one has been found in this region",
+    "try": "Try selecting a different city or country"
+  }
+}
