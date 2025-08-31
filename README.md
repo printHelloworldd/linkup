@@ -75,7 +75,7 @@ LinkUp uses modern cryptographic standards:
 
 ## 🖼️ Screenshots
 
-<img src="images/hobbies_page.png" alt="screenshot" width="400" height="724"/>
+<img src="images/hobbies_page.png" alt="screenshot" width="300" height="724"/>
 <img src="images/profile_page.png" alt="screenshot" width="300" height="724"/>
 <img src="images/chats_page.png" alt="screenshot" width="300" height="724"/>
 <img src="images/chat_page.png" alt="screenshot" width="300" height="724"/>
